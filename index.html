@@ -3,21 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://img.freepik.com/free-vector/kawaii-mango-icon_24911-45334.jpg?size=338&ext=jpg"
+    />
     <title>Welcome to MangoTalk</title>
   </head>
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!-- To do: Wifi icon -->
+        <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>11%</span>
-        <!-- Battery icon -->
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-charging-station"></i>
       </div>
     </div>
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">망고톡에 오신 것을 환영합니다.</h1>
+      <p class="welcome-header__text">
+        이메일 혹은 전화번호와 비밀번호를 입력하면 로그인 할 수 있습니다.
+      </p>
+    </header>
+
+    <form class="login-form">
+      <input
+        class="login-form__id"
+        type="text"
+        placeholder="Email or phonenumber"
+      />
+      <input
+        class="login-form__password"
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login-form__loginbtn" type="submit" value="Log in" />
+      <input class="login-form__signupbtn" type="submit" value="Sign up" />
+      <a href="#">Find ID or password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/85d4104f41.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
