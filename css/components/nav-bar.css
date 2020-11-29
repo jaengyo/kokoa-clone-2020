@@ -1,0 +1,36 @@
+.nav {
+  background-color: var(--chinkyellow);
+  padding: 20px 50px;
+  border-top: 1px wheat solid;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__link {
+  color: #2e363e;
+}
+
+.nav__btn {
+  position: relative;
+}
+
+.nav__noti {
+  background-color: tomato;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 20px;
+  top: -5px;
+}

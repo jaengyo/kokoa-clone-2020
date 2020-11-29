@@ -8,7 +8,7 @@
       href="https://img.freepik.com/free-vector/kawaii-mango-icon_24911-45334.jpg?size=338&ext=jpg"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Welcome to MangoTalk</title>
+    <title>Welcome to manGoTalk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -26,26 +26,30 @@
       </div>
     </div>
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome To MangoTalk !</h1>
+      <h1 class="welcome-header__title">Welcome To manGoTalk !</h1>
       <p class="welcome-header__text">
         If you have a Account, log in with your email or phone number.
       </p>
     </header>
 
-    <form action="friends.html" class="login-form">
+    <form action="friends.html" method="get" class="login-form">
       <input
-        class="login-form__id"
+        required
+        name="username"
+        class="login-form__input"
         type="text"
-        placeholder="Email or phonenumber"
+        placeholder="email or phonenumber"
       />
       <input
-        class="login-form__password"
+        required
+        name="password"
+        class="login-form__input"
         type="password"
-        placeholder="Password"
+        placeholder="password"
       />
-      <input class="login-form__loginbtn" type="submit" value="Log in" />
-      <input class="login-form__signupbtn" type="submit" value="Sign up" />
-      <a href="#">Find Account or Password</a>
+      <input class="login-form__btn" type="submit" value="Log in" />
+      <input class="login-form__btn" type="submit" value="Sign up" />
+      <a class="login-form__link" href="#">Find Account or Password</a>
     </form>
 
     <script
