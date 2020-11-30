@@ -34,3 +34,13 @@
   left: 20px;
   top: -5px;
 }
+
+.nav__notidot {
+  background-color: tomato;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  top: -5px;
+}
