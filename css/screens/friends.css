@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 15px;
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: var(--main-border);
   padding-top: 5px;
   color: rgba(0, 0, 0, 0.3);
 }
