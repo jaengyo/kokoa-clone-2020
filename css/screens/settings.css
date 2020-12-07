@@ -1,0 +1,13 @@
+.settings__setting {
+  padding: 15px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed wheat;
+}
+
+.settings__setting i {
+  margin-right: 10px;
+  font-size: 22px;
+  opacity: 0.9;
+}
