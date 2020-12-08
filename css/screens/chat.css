@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: var(--chickyellow);
-  height: 200vh;
+  height: 100vh;
 }
 
 #chat-screen .alt-header {
@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
 }
 
 .chat__timestamp {
@@ -22,4 +23,119 @@
   padding: 10px;
   font-size: 12px;
   border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.message-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30%;
+  margin-right: 15px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__author,
+.message__time {
+  opacity: 0.8;
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  margin-right: 8px;
+  font-size: 17px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: burlywood;
+  border-top-right-radius: 0;
+  border-top-left-radius: 10px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px 5px 0px;
+
+  align-items: center;
+}
+
+.reply .reply__column:first-child {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.reply .reply__column:last-child {
+  width: 92%;
+  position: relative;
+}
+.reply input {
+  height: 30px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 0;
+  top: 8px;
+}
+
+.reply__column:last-child > i {
+  right: 35px;
+  top: 12px;
+}
+
+.reply__column button {
+  background-color: var(--chickyellow);
+  border: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 20%;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+.reply__column button i {
+  opacity: 1;
 }
