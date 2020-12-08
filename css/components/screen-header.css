@@ -33,3 +33,15 @@
   left: 80px;
   top: -3px;
 }
+
+@keyframes spinCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotatez(360deg);
+  }
+}
+.fa-cog:hover {
+  animation: spinCog 2s linear infinite;
+}

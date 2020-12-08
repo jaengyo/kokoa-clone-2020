@@ -1,6 +1,17 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 #chat-screen {
   background-color: var(--chickyellow);
-  height: 100vh;
+  height: 300vh;
 }
 
 #chat-screen .alt-header {
@@ -16,6 +27,8 @@
   flex-direction: column;
   align-items: center;
   padding: 5px;
+  animation: fadeIn 0.3s linear;
+  will-change: translate;
 }
 
 .chat__timestamp {
