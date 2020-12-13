@@ -27,10 +27,15 @@
 .more-suggestions__icon-image {
   width: 55px;
   height: 55px;
-  background-color: yellow;
+  background-color: var(--chickyellow);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.more-suggestions__icon-text {
+  width: 80px;
+  text-align: center;
 }
