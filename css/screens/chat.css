@@ -130,7 +130,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: var(--chickyellow);
   display: flex;
   justify-content: space-between;
   padding: 5px 20px 5px 0px;
@@ -152,6 +152,11 @@
   width: 100%;
   border-radius: 10px;
   padding: 3px;
+  transition: border-radius 1s;
+}
+
+.reply input:focus {
+  border-radius: 20px;
 }
 
 .reply__column:last-child > i,
